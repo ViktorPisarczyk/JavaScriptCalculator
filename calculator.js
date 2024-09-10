@@ -56,9 +56,9 @@ class Calculator {
   }
 
   diameterOfCircle(circumference) {
-    return `The diameter of a circle with a circumference of ${circumference} is ${
+    return `The diameter of a circle with a circumference of ${circumference} is ${(
       circumference / this.PI
-    } cm.`;
+    ).toFixed(2)} cm.`;
   }
 
   circumferenceOfCircle(diameter) {
@@ -68,9 +68,9 @@ class Calculator {
   }
 
   compoundInterest(PV, r, t) {
-    return `If you invest ${PV}€ with an interest rate of ${r}% for ${t} years, you will end up with ${
+    return `If you invest ${PV}€ with an interest rate of ${r}% for ${t} years, you will end up with ${(
       PV * Math.pow(this.E, (r / 100) * 3)
-    } €.`;
+    ).toFixed(2)} €.`;
   }
 }
 
